@@ -8,6 +8,7 @@ class MyHome extends StatelessWidget {
     TextEditingController nameContr = TextEditingController();
     final size = MediaQuery.of(context).size;
     return Scaffold(
+      backgroundColor: Colors.white,
       body: SafeArea(
         child: Container(
           height: size.height * 1.0,
@@ -22,9 +23,9 @@ class MyHome extends StatelessWidget {
                   child: Text(
                     'язык',
                     style:
-                        TextStyle(color: Colors.lightGreenAccent, fontSize: 20),
+                        TextStyle(color: Colors.lightGreen, fontSize: 20),
                   ),
-                ),
+                ),gi
               ),
               Align(
                 alignment: Alignment.topCenter,
