@@ -25,7 +25,7 @@ class MyHome extends StatelessWidget {
                     style:
                         TextStyle(color: Colors.lightGreen, fontSize: 20),
                   ),
-                ),gi
+                ),
               ),
               Align(
                 alignment: Alignment.topCenter,
