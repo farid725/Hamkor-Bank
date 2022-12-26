@@ -14,7 +14,7 @@ class MyHome extends StatelessWidget {
           height: size.height * 1.0,
           width: size.width * 1.0,
           child: Column(
-            crossAxisAlignment: CrossAxisAlignment.end,
+            crossAxisAlignment: CrossAxisAlignment.center,
             children: [
               Align(
                 alignment: Alignment.topRight,
@@ -27,13 +27,8 @@ class MyHome extends StatelessWidget {
                   ),
                 ),
               ),
-              Align(
-                alignment: Alignment.topCenter,
-                child: Image(image: AssetImage('assets/pre.png')),
-              ),
-              Align(
-                  alignment: Alignment.topCenter,
-                  child: Padding(
+              Image(image: AssetImage('assets/pre.png')),
+              Padding(
                     padding: EdgeInsets.only(top: 55),
                     child: CircleAvatar(
                       radius: 45,
@@ -44,19 +39,15 @@ class MyHome extends StatelessWidget {
                         color: Colors.white,
                       ),
                     ),
-                  )),
-              Align(
-                  alignment: Alignment.topCenter,
-                  child: Padding(
+                  ),
+              Padding(
                     padding: EdgeInsets.only(top: 20),
                     child: Text(
                       'Добро пожаловать!',
                       style: TextStyle(color: Colors.black, fontSize: 25),
                     ),
-                  )),
-              Align(
-                  alignment: Alignment.topCenter,
-                  child: Padding(
+                  ),
+              Padding(
                     padding: EdgeInsets.only(left: 20, right: 20),
                     child: TextFormField(
                       controller: TextEditingController(),
@@ -72,10 +63,8 @@ class MyHome extends StatelessWidget {
                       keyboardType: TextInputType.text,
                       obscureText: true,
                     ),
-                  )),
-              Align(
-                  alignment: Alignment.topCenter,
-                  child: Padding(
+                  ),
+              Padding(
                     padding: EdgeInsets.only(left: 20, right: 20),
                     child: TextFormField(
                       controller: TextEditingController(),
@@ -91,10 +80,8 @@ class MyHome extends StatelessWidget {
                       keyboardType: TextInputType.text,
                       obscureText: true,
                     ),
-                  )),
-              Align(
-                  alignment: Alignment.topCenter,
-                  child: Padding(
+                  ),
+              Padding(
                     padding: EdgeInsets.only(top: 20, right: 40, left: 40),
                     child: ElevatedButton(
                       onPressed: () {},
@@ -105,10 +92,8 @@ class MyHome extends StatelessWidget {
                         child: Text('ВОЙТИ'),
                       ),
                     ),
-                  )),
-              Align(
-                  alignment: Alignment.topCenter,
-                  child: Padding(
+                  ),
+              Padding(
                     padding: EdgeInsets.only(top: 50),
                     child: CircleAvatar(
                       radius: 30,
@@ -118,23 +103,18 @@ class MyHome extends StatelessWidget {
                         size: 40,
                       ),
                     ),
-                  )),
-              Align(
-                alignment: Alignment.topCenter,
-                child: Text(
+                  ),
+              Text(
                   'Отпечаток пальца',
                   style: TextStyle(
                       fontSize: 20,
                       color: Colors.lightGreen,
                       fontWeight: FontWeight.bold),
                 ),
-              ),
               SizedBox(
                 height: size.height*0.1,
               ),
-              Align(
-                  alignment: Alignment.bottomCenter,
-                  child: Padding(
+              Padding(
                     padding: EdgeInsets.only(top: 30),
                     child: Text(
                       'РЕГИСТРАЦИЯ',
@@ -144,7 +124,7 @@ class MyHome extends StatelessWidget {
                         fontSize: 23,
                       ),
                     ),
-                  )),
+                  ),
               Align(
                   alignment: Alignment.bottomCenter,
                   child: Text(
